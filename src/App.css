@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+
+  /* .header{
+    width: 100%;
+  } */
+
+}
+
+.header {
+  width: auto;
+  /* background-color: #fd9e78ef; */
+  /* border-bottom: 1px solid #d8cece; */
+  display: flex;
+  /* padding: 0 20px; */
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.header h2 {
+  margin-left: 10px;
+}
+
+.footer {
+  background-color: #0e0e0def;
+  display: flex;
+  bottom: 0;
+  color: #ffffff;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  /* height: 70px; */
+}
+
+/* from CrateNote  */
+.main__note {
+  /* background-color: tomato; */
+  width: 40rem;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+
+.main__note form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  
+  border: 1px solid #d8cece;
+  width: 270px;
+  height: 30px;
+  text-indent: 30px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  /* -webkit-box-shadow : inset 0 0 5px #5f5d5d; */
+  /* box-shadow: inset 0 0 5px #5f5d5d; */
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+  outline: none;
+}
+
+.inner__box section {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+textarea {
+  outline: none;
+  margin-top: 30px;
+  width: 300px;
+  height: 100px;
+  border: 1px solid #d8cece;
+  border-radius: 10px;
+  text-indent: 0px;
+  padding: 0 20px;
+  padding-top: 20px;
+  text-align: justify;
+}
+
+.inner__box .plusIcon {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  color: #2d2d31;
+  cursor: pointer;
+  font-size: 45px;
+  background-color: #f8a323c4;
+  border-radius: 100%;
+}
+
+.appBox__container {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+
+.note__box {
+  max-width: 100%;
+  width: 300px;
+  height: 100%;
+  border: 1px solid #d8cece;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.note__box h3 {
+  /* width: 100%; */
+  text-align: center;
+  background-color: #1d102eef;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 10px 0;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.note__box p {
+  margin: 0 20px;
+  margin-bottom: 50px;
+  text-align: justify;
+  word-spacing: normal;
+}
+
+.note__box section {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.note__box Button {
+  background-color: #2d2d31;
+  color: #ffffff;
+  right: 10px;
+  bottom: 10px;
+}
+
+.note__box Button:hover {
+  background-color: #fd3f3fef;
+}
